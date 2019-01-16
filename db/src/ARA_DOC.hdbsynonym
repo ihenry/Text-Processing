@@ -1,0 +1,9 @@
+{
+  "ARA_DOC": {
+    "target": {
+      "object": "ARABIC_DOCS",
+      "schema": "TEXT_ANALYSIS_1",
+      "database": "TEN1"
+    }
+  }
+}

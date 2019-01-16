@@ -1,0 +1,14 @@
+namespace "TATM"; /*@@layout{"layoutInfo":{"x":-110,"y":-28.5}}*/
+
+using "$TA_PDF_IDX" as TA_PDF_IDX;
+
+
+/*@@layout{"layoutInfo":{"x":-269,"y":-171.5}}*/
+view PERSON_TA_RAW as
+    select from TA_PDF_IDX
+    {
+        NAME as DOC_NAME,
+        TA_TOKEN as PERSON
+    }
+    where TA_PDF_IDX.TA_TYPE = 'PERSON'
+    group by NAME, TA_TOKEN;

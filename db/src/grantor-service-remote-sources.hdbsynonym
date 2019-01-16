@@ -1,0 +1,14 @@
+{
+  "$TA_PDF_IDX": {
+    "target": {
+      "object": "$TA_PDF_IDX",
+      "schema": "TATM"
+    }
+  },
+  "FILECONTENT": {
+    "target": {
+      "object": "FILECONTENT",
+      "schema": "TATM"
+    }
+  }
+}
