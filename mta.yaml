@@ -11,8 +11,6 @@ modules:
       properties:
         TARGET_CONTAINER: ~{hdi-container-name}
 
-
-
     - name: cross-container-service-1
       group: SERVICE_REPLACEMENTS
 
@@ -20,8 +18,6 @@ modules:
         key: grantor-service
         service: ~{the-service-name}
                           
-
-
 resources:
  - name: hdi_db
    parameters:
@@ -33,7 +29,7 @@ resources:
 
  - name: cross-container-service-1
    parameters:
-      service-name: grantor-service-remote-sources
+      service-name: grantor-service
    properties:
       the-service-name: ${service-name}
    type: org.cloudfoundry.existing-service

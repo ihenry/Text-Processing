@@ -1,6 +1,6 @@
 namespace "TATM"; /*@@layout{"layoutInfo":{"x":-110,"y":-28.5}}*/
 
-using "$TA_PDF_IDX" as TA_PDF_IDX;
+using "TATM_$TA_PDF_IDX" as TA_PDF_IDX;
 
 
 /*@@layout{"layoutInfo":{"x":-269,"y":-171.5}}*/

@@ -1,11 +1,11 @@
 {
-  "$TA_PDF_IDX": {
+  "TATM_$TA_PDF_IDX": {
     "target": {
       "object": "$TA_PDF_IDX",
       "schema": "TATM"
     }
   },
-  "FILECONTENT": {
+  "TATM_FILECONTENT": {
     "target": {
       "object": "FILECONTENT",
       "schema": "TATM"
