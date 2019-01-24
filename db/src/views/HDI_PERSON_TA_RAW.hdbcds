@@ -1,0 +1,17 @@
+namespace "HDI"; /*@@layout{"layoutInfo":{"x":-110,"y":-28.5}}*/
+
+using "$TA_FILECONTENT_SDI_IDX" as TA_PDF_IDX;
+using "FILECONTENT_SDI" as FC;
+
+/*@@layout{"layoutInfo":{"x":-269,"y":-171.5}}*/
+view PERSON_TA as
+    select from TA_PDF_IDX TA_PDF_IDX
+    	inner join FC
+    	on TA_PDF_IDX.NAME = FC.NAME
+    		{
+        		FC.NAME as DOC_NAME,
+    			TA_TOKEN as PERSON,
+    			CATEGORY 
+    		}
+		where TA_PDF_IDX.TA_TYPE = 'PERSON'
+    	group by FC.NAME, TA_TOKEN, CATEGORY;
