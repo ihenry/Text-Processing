@@ -159,11 +159,11 @@
   </tableMappings>
   <nodes xmi:id="9ea36a3d4ed609c427db13055d79ffb1" name="_TA_FILECONTENT_SDI_IDX" catalogObjectName="$TA_FILECONTENT_SDI_IDX" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN">
     <annotations key="sap.afm.layout" xmi:id="1c760e7b2914a983af99a869fbc2beba">
-      <annotations xmi:id="43b622d753bd51331d70abaee3327403" key="x" value="9">
+      <annotations xmi:id="43b622d753bd51331d70abaee3327403" key="x" value="99">
       </annotations>
-      <annotations xmi:id="e33aa8d86f9a3a0cb599311da5832afb" key="y" value="-98">
+      <annotations xmi:id="e33aa8d86f9a3a0cb599311da5832afb" key="y" value="-101">
       </annotations>
-      <annotations xmi:id="023785115b2d3d47260fcadf082c8a50" key="width" value="129.9296875">
+      <annotations xmi:id="023785115b2d3d47260fcadf082c8a50" key="width" value="208.77734375">
       </annotations>
       <annotations xmi:id="5694bc5fa05fd7e3111d22f1c0f90a63" key="height" value="115">
       </annotations>
@@ -572,44 +572,37 @@
     </annotations>
     <inputs xmi:id="2e57a60bef90c27f98b44a718866e57b" name="Add_ID_IN">
       <attributes xmi:id="8024acd06d250db054cc96f5faedf86d" name="DOC_NAME" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="8ee75915265cc1aa534098179ea69fc0" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="8ee75915265cc1aa534098179ea69fc0" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="77f640acb519fae67d5d1e3419eb85fd" name="OCCURANCES_1" type="BIGINT" nullable="false">
-        <annotations xmi:id="5ed440cb397e76b78924fd4a3a463b8e" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="5ed440cb397e76b78924fd4a3a463b8e" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="5107a7015093614988a2c098d0eb7f51" name="FULL_NAME_1" type="NVARCHAR" nullable="false" length="131">
       </attributes>
       <attributes xmi:id="9acfbbe911ce4b48aa7a282b3e387fb9" name="OCCURANCES_2" type="BIGINT" nullable="false">
-        <annotations xmi:id="2c8447fb72971d11ded78973d4ee08b8" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="2c8447fb72971d11ded78973d4ee08b8" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="638991e3cba43997265f86347867df7c" name="FULL_NAME_2" type="NVARCHAR" nullable="false" length="131">
       </attributes>
     </inputs>
     <outputs xmi:id="f050d8828222a020b325fe6d8190cd80" name="Add_ID_OUT">
       <attributes xmi:id="51ef860c0e7bd1bdd6fff0797a86a0ab" name="DOC_NAME" type="NVARCHAR" nullable="false" expression="&quot;DOC_NAME&quot;" length="1024">
-        <annotations xmi:id="96e881f207abb572117bd3dde4e536c6" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="96e881f207abb572117bd3dde4e536c6" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="d18ccd54ffd3d054921d80df8dd128c5" name="OCCURANCES_1" type="BIGINT" nullable="false" expression="&quot;OCCURANCES_1&quot;">
-        <annotations xmi:id="eb7f1bb44a59cd88e144a71f55c47e13" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="eb7f1bb44a59cd88e144a71f55c47e13" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="b7ece4d327c39506a1766075db990712" name="FULL_NAME_1" type="NVARCHAR" nullable="false" expression="&quot;FULL_NAME_1&quot;" length="131">
       </attributes>
       <attributes xmi:id="d8ff00bb2a320ac622bdbeec258e0486" name="OCCURANCES_2" type="BIGINT" nullable="false" expression="&quot;OCCURANCES_2&quot;">
-        <annotations xmi:id="d0607980e6867a02d2994494af276cde" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="d0607980e6867a02d2994494af276cde" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="a90f1ee57487ffdea5d781349fdb5b2a" name="FULL_NAME_2" type="NVARCHAR" nullable="false" expression="&quot;FULL_NAME_2&quot;" length="131">
       </attributes>
       <attributes xmi:id="7ea643e195770435717c9d151046043c" name="TOTAL_OCCURANCES" type="NVARCHAR" nullable="false" length="500" expression="&quot;OCCURANCES_1&quot; + &quot;OCCURANCES_2&quot;">
       </attributes>
       <attributes xmi:id="2a9f635638372298602d561653281e61" name="ROW" type="BIGINT" nullable="true" expression="ROW_NUMBER () OVER () ">
-        <annotations xmi:id="bd72eb5928de61ef1316abac4ac844ed" key="sap.im.primaryKey" value="true">
-        </annotations>
+        <annotations xmi:id="bd72eb5928de61ef1316abac4ac844ed" key="sap.im.primaryKey" value="true"/>
       </attributes>
     </outputs>
   </nodes>
@@ -706,8 +699,7 @@
       <attributes xmi:id="cbf77c482b41aa24d08be94bf79f499f" name="CATEGORY" type="NVARCHAR" nullable="false" length="40">
       </attributes>
       <attributes xmi:id="340cfd978dbe37721c72be98fc363e9c" name="ID" type="BIGINT" nullable="true">
-        <annotations xmi:id="5aedb3d8ace4d2ff2563cdf68697e348" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="5aedb3d8ace4d2ff2563cdf68697e348" key="sap.im.primaryKey" value="false"/>
       </attributes>
     </inputs>
   </nodes>
