@@ -83,7 +83,7 @@
       </attributes>
     </outputs>
   </nodes>
-  <nodes xmi:id="faaa74572601ddc2bc1b9f6246e1e2c2" xsi:type="flowgraph:FilterNode" name="ADD_CATEGORY" expression="LEFT(PATH,20) = &#x27;/hana/data/txt/PDFs/&#x27;">
+  <nodes xmi:id="faaa74572601ddc2bc1b9f6246e1e2c2" xsi:type="flowgraph:FilterNode" name="add_CATEGORY" expression="LEFT(PATH,20) = &#x27;/hana/data/txt/PDFs/&#x27;">
     <annotations key="sap.afm.layout" xmi:id="a50d1c2fb8d8750cc3ecaa44754d82bd">
       <annotations xmi:id="ffcba9d214709b7a5e2db888cfb7e75e" key="x" value="194.39501953125">
       </annotations>
@@ -94,22 +94,26 @@
       <annotations xmi:id="0a9ed0983376866fae5dc02a6a94df1b" key="height" value="115">
       </annotations>
     </annotations>
-    <inputs xmi:id="a8001b19439916d255c77266b7a17c2a" name="ADD_CATEGORY_IN">
+    <inputs xmi:id="a8001b19439916d255c77266b7a17c2a" name="add_CATEGORY_IN">
       <attributes xmi:id="cd1c33ebeb5b90a079311aed20dfc345" name="PATH" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="796f3b1030732a95206de92d49a34baf" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="796f3b1030732a95206de92d49a34baf" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
       <attributes xmi:id="ef42a659c6e1d0b99b921b3fe289c3fa" name="NAME" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="484828e882ecec180369c11877910cef" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="484828e882ecec180369c11877910cef" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
       <attributes xmi:id="9ad2d39c4572523fd50296f6be1a007f" name="CONTENT_BLOB" type="BLOB" nullable="true" length="2147483647">
       </attributes>
     </inputs>
-    <outputs xmi:id="081033a41c412d0bbf16998fb96cd08b" name="ADD_CATEGORY_OUT">
+    <outputs xmi:id="081033a41c412d0bbf16998fb96cd08b" name="add_CATEGORY_OUT">
       <attributes xmi:id="09c1c4342cabed48c6d34e4db4446f6a" name="PATH" type="NVARCHAR" nullable="false" expression="&quot;PATH&quot;" length="1024">
-        <annotations xmi:id="7c86e0d42d5b7e368b4df8697d891a1b" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="7c86e0d42d5b7e368b4df8697d891a1b" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="4022faabd3bbc5b6611cc31ca502b8e1" name="NAME" type="NVARCHAR" nullable="false" expression="&quot;NAME&quot;" length="1024">
-        <annotations xmi:id="6aa6304c35f5eb4f5fc61c5eaebfdb91" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="6aa6304c35f5eb4f5fc61c5eaebfdb91" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
       <attributes xmi:id="c1e823d44a27b6871816bcfbf7b4a2ef" name="CONTENT_BLOB" type="BLOB" nullable="true" expression="&quot;CONTENT_BLOB&quot;" length="2147483647">
       </attributes>
@@ -148,18 +152,16 @@
         </annotations>
       </attributes>
       <attributes xmi:id="43931036f17cb13ed9ea9efc8e9f9746" name="CONTENT_BLOB" type="BLOB" nullable="true" length="2147483647">
-        <annotations xmi:id="aa9b37cc03f62cb625aec6815bf1701d" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="aa9b37cc03f62cb625aec6815bf1701d" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="0ba03d1160b075749ed4d75e0fbad86a" name="CATEGORY" type="NVARCHAR" nullable="true" length="40">
-        <annotations xmi:id="9bc37fb9773855488ef761b5ea69f9ae" key="sap.im.primaryKey" value="false">
-        </annotations>
+        <annotations xmi:id="9bc37fb9773855488ef761b5ea69f9ae" key="sap.im.primaryKey" value="false"/>
       </attributes>
       <attributes xmi:id="0424f71c28f3eae694c86df807bac781" name="LANG" type="NVARCHAR" nullable="true" length="2">
       </attributes>
     </inputs>
   </nodes>
-  <nodes xmi:id="ef741374857934fbd144647ca1646f8e" xsi:type="flowgraph:FilterNode" name="Projection">
+  <nodes xmi:id="ef741374857934fbd144647ca1646f8e" xsi:type="flowgraph:FilterNode" name="add_LANG">
     <annotations key="sap.afm.layout" xmi:id="829a9e1def8310892ca50e2ee0f9059d">
       <annotations xmi:id="d5e7a66ca786e7d830bc3f6887faa414" key="x" value="375.39501953125">
       </annotations>
@@ -170,30 +172,34 @@
       <annotations xmi:id="70e6db91f25c74e60a0c1f9c97facea3" key="height" value="115">
       </annotations>
     </annotations>
-    <inputs xmi:id="5b0693d742272adaaba7f5c446c3962b" name="Projection_IN">
+    <inputs xmi:id="5b0693d742272adaaba7f5c446c3962b" name="add_LANG_IN">
       <attributes xmi:id="cae73f1de55f342d76ce4afa1e2e887e" name="PATH" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="5b3922381d71a4bea943d5552e756a41" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="5b3922381d71a4bea943d5552e756a41" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="92c0587e62f9422670a670b76717f461" name="NAME" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="432adcdf05180afdab2b609423153901" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="432adcdf05180afdab2b609423153901" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
       <attributes xmi:id="595b1e6c2367fc4d7e0dce912e0c8ec9" name="CONTENT_BLOB" type="BLOB" nullable="true" length="2147483647">
       </attributes>
       <attributes xmi:id="de141155754f262d02b91420ebb41ee8" name="CATEGORY" type="NVARCHAR" nullable="true" length="40">
       </attributes>
     </inputs>
-    <outputs xmi:id="3230f2019c4ea0f02d8adeae8e12340b" name="Projection_OUT">
+    <outputs xmi:id="3230f2019c4ea0f02d8adeae8e12340b" name="add_LANG_OUT">
       <attributes xmi:id="08290dd6eb2628ac408f5a7b6b70a90c" name="PATH" type="NVARCHAR" nullable="false" expression="&quot;PATH&quot;" length="1024">
-        <annotations xmi:id="12ab596500827f010befe0d7f1bfef30" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="12ab596500827f010befe0d7f1bfef30" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="71ccd3ec60c62b69e93a061e134a76a2" name="NAME" type="NVARCHAR" nullable="false" expression="&quot;NAME&quot;" length="1024">
-        <annotations xmi:id="0cd52e5d4fc5e02e7ebb4dfa175561da" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="0cd52e5d4fc5e02e7ebb4dfa175561da" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
       <attributes xmi:id="9c66bd1f95e60726b036d6b37aa33e6d" name="CONTENT_BLOB" type="BLOB" nullable="true" expression="&quot;CONTENT_BLOB&quot;" length="2147483647">
       </attributes>
       <attributes xmi:id="aa8bf0b9a256afb39473c8eb1af588d9" name="CATEGORY" type="NVARCHAR" nullable="true" expression="&quot;CATEGORY&quot;" length="40">
       </attributes>
-      <attributes xmi:id="7006223d67b39de4f7b98a57fd28b904" name="LANG" type="NVARCHAR" nullable="true" length="2" expression="CASE &quot;CATEGORY&quot; WHEN &#x27;arabic&#x27; THEN &#x27;ar&#x27; ELSE &#x27;en&#x27; END ">
+      <attributes xmi:id="7006223d67b39de4f7b98a57fd28b904" name="LANG" type="NVARCHAR" nullable="true" length="2" expression="CASE &quot;CATEGORY&quot; WHEN &#x27;Arabic&#x27; THEN &#x27;ar&#x27; ELSE &#x27;en&#x27; END ">
       </attributes>
     </outputs>
   </nodes>
