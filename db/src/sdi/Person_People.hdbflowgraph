@@ -606,7 +606,7 @@
       </attributes>
     </outputs>
   </nodes>
-  <nodes xmi:id="a3cfb713b166fa5215af39972f2bc802" name="PEOPLE_UNIQUE" catalogObjectName="PEOPLE_UNIQUE" type="TEMPLATE_TABLE" xsi:type="flowgraph:DataNode">
+  <nodes xmi:id="a3cfb713b166fa5215af39972f2bc802" name="PEOPLE_UNIQUE" catalogObjectName="PEOPLE_UNIQUE" type="TEMPLATE_TABLE" xsi:type="flowgraph:DataNode" truncateTable="true">
     <annotations key="sap.afm.layout" xmi:id="fc67ecfb224406eccd96cbbce8c75656">
       <annotations xmi:id="7d23cd8a2756605d835ac0a18a546790" key="x" value="859">
       </annotations>
@@ -633,14 +633,16 @@
         </annotations>
       </attributes>
       <attributes xmi:id="2d49709381e3e3106016502721fb335b" name="DOCUMENT_APPEARANCES" type="BIGINT" nullable="false">
-        <annotations xmi:id="7e6e55474140d89f2b282435e9bd16cc" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="7e6e55474140d89f2b282435e9bd16cc" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="01a6be2692e3d2263f7353227b625cb0" name="NAME_OCCURANCES" type="BIGINT" nullable="false">
-        <annotations xmi:id="0283177d13125809b012c34ba7cabaf3" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="0283177d13125809b012c34ba7cabaf3" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
     </inputs>
   </nodes>
-  <nodes xmi:id="b875c297bcf63fa058e76f6f1a941e95" xsi:type="flowgraph:DataNode" name="PEOPLE_PEOPLE" truncateTable="false" catalogObjectName="PEOPLE_PEOPLE" type="TEMPLATE_TABLE">
+  <nodes xmi:id="b875c297bcf63fa058e76f6f1a941e95" xsi:type="flowgraph:DataNode" name="PEOPLE_PEOPLE" truncateTable="true" catalogObjectName="PEOPLE_PEOPLE" type="TEMPLATE_TABLE">
     <annotations key="sap.afm.layout" xmi:id="5829a14edc40f24d5b4d72b818cc7acc">
       <annotations xmi:id="fac4f5c821d07ff4fb959973c19a9078" key="x" value="1103">
       </annotations>
@@ -699,7 +701,8 @@
       <attributes xmi:id="cbf77c482b41aa24d08be94bf79f499f" name="CATEGORY" type="NVARCHAR" nullable="false" length="40">
       </attributes>
       <attributes xmi:id="340cfd978dbe37721c72be98fc363e9c" name="ID" type="BIGINT" nullable="true">
-        <annotations xmi:id="5aedb3d8ace4d2ff2563cdf68697e348" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="5aedb3d8ace4d2ff2563cdf68697e348" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
     </inputs>
   </nodes>
