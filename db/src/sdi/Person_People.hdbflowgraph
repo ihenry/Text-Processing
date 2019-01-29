@@ -668,9 +668,11 @@
     </annotations>
     <annotations xmi:id="1ff7dd2b97980de7273d817f8ddcbe22" key="sap.afm.displayName" value="Data Target">
     </annotations>
-    <annotations xmi:id="094439e1de2127a797f6fc4d72b51d84" key="sap.im.keyGenerationAttribute" value="SEFAN">
+    <annotations xmi:id="094439e1de2127a797f6fc4d72b51d84" key="sap.im.keyGenerationAttribute" value="ID">
     </annotations>
     <annotations xmi:id="969eae4f0293aa60d4797489d8fb7967" key="sap.im.sequenceName" value="PEOPLE_ID">
+    </annotations>
+    <annotations xmi:id="6314a57c20426fe5344e410136084741" key="sap.im.logicalkeys" value="340cfd978dbe37721c72be98fc363e9c">
     </annotations>
     <inputs xmi:id="d8dad8bea7240a8e745fad51acc76064" name="PEOPLE_PEOPLE" kind="TABLE">
       <attributes xmi:id="3367c82fb7700829d8c213da8d90045e" name="DOC_NAME" type="NVARCHAR" nullable="false" length="1024">
@@ -697,13 +699,15 @@
         <annotations xmi:id="033dda01cfe02c672896cc1d26d12c63" key="sap.im.primaryKey" value="false">
         </annotations>
       </attributes>
-      <attributes xmi:id="29766bb0cf457634e62741af5fd98f95" name="ROW" type="BIGINT" nullable="true">
+      <attributes xmi:id="29766bb0cf457634e62741af5fd98f95" name="ROW" type="BIGINT" nullable="false">
         <annotations xmi:id="fbd96aa9d15843484ead4e1385840b07" key="sap.im.primaryKey" value="true">
         </annotations>
       </attributes>
-      <attributes xmi:id="cbf77c482b41aa24d08be94bf79f499f" name="CATEGORY" type="NVARCHAR" nullable="true" length="40">
+      <attributes xmi:id="cbf77c482b41aa24d08be94bf79f499f" name="CATEGORY" type="NVARCHAR" nullable="false" length="40">
       </attributes>
       <attributes xmi:id="340cfd978dbe37721c72be98fc363e9c" name="ID" type="BIGINT" nullable="true">
+        <annotations xmi:id="5aedb3d8ace4d2ff2563cdf68697e348" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
     </inputs>
   </nodes>
