@@ -706,7 +706,7 @@
       </attributes>
     </inputs>
   </nodes>
-  <nodes xmi:id="0f961855eb0100eacd528396611c56ff" xsi:type="flowgraph:LookupNode" name="Lookup_Category" lookupCondition="&quot;Lookup_Category_IN&quot;.&quot;DOC_NAME&quot;=&quot;FILECONTENT&quot;.&quot;NAME&quot;" lookupTableName="TATM_FILECONTENT">
+  <nodes xmi:id="0f961855eb0100eacd528396611c56ff" xsi:type="flowgraph:LookupNode" name="Lookup_Category" lookupCondition="&quot;Lookup_Category_IN&quot;.&quot;DOC_NAME&quot;=&quot;FILECONTENT_SDI&quot;.&quot;NAME&quot;" lookupTableName="FILECONTENT_SDI">
     <annotations key="sap.afm.layout" xmi:id="fc33354298779f90fbe4d12ceb1066bf">
       <annotations xmi:id="3ee0f65374e6a5696c187b05998aa519" key="x" value="1000">
       </annotations>
@@ -719,22 +719,26 @@
     </annotations>
     <inputs xmi:id="2d0d2e7812ce86390c43c5f12e3c71df" name="Lookup_Category_IN" kind="TABLE">
       <attributes xmi:id="231ed9061a6c94cba7ab206e7fa6ae19" name="DOC_NAME" type="NVARCHAR" nullable="false" length="1024">
-        <annotations xmi:id="854a5313b6bc494aee2e28ede0ef67db" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="854a5313b6bc494aee2e28ede0ef67db" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="a0e61728aca209c493f04e7b9d83dfd4" name="OCCURANCES_1" type="BIGINT" nullable="false">
-        <annotations xmi:id="75bfeff4c9a40d30cc457912fe104b97" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="75bfeff4c9a40d30cc457912fe104b97" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="3062fc0fd00da7f335220675cc068eb7" name="FULL_NAME_1" type="NVARCHAR" nullable="false" length="131">
       </attributes>
       <attributes xmi:id="150f41cce8f43b98eda520ba7398031a" name="OCCURANCES_2" type="BIGINT" nullable="false">
-        <annotations xmi:id="e6296cec41342753afa40fa4949d7c29" key="sap.im.primaryKey" value="false"/>
+        <annotations xmi:id="e6296cec41342753afa40fa4949d7c29" key="sap.im.primaryKey" value="false">
+        </annotations>
       </attributes>
       <attributes xmi:id="7ac1dfbc8b076b363352e55b166fcfb0" name="FULL_NAME_2" type="NVARCHAR" nullable="false" length="131">
       </attributes>
       <attributes xmi:id="0a905933314cfe1f1d91ae9f3da18ab4" name="TOTAL_OCCURANCES" type="NVARCHAR" nullable="false" length="500">
       </attributes>
       <attributes xmi:id="a4e1c431d6d2cca2370cdf94623b0427" name="ROW" type="BIGINT" nullable="true">
-        <annotations xmi:id="c08594062b18c1fed3ffd8c304c38a58" key="sap.im.primaryKey" value="true"/>
+        <annotations xmi:id="c08594062b18c1fed3ffd8c304c38a58" key="sap.im.primaryKey" value="true">
+        </annotations>
       </attributes>
     </inputs>
     <outputs xmi:id="f67ed8a31efe23fc91aa2fee7af98e08" name="Lookup_Category_OUT" kind="TABLE">
